@@ -11,7 +11,10 @@ import SwiftUI
 struct MonitorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
